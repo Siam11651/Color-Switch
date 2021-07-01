@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="640"
+   height="640"
+   viewBox="0 0 640 640"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="Star.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     units="px"
+     inkscape:zoom="0.4944234"
+     inkscape:cx="-181.01894"
+     inkscape:cy="242.70696"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       sodipodi:type="star"
+       style="fill:#ffffff;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none"
+       id="path37"
+       inkscape:flatsided="false"
+       sodipodi:sides="5"
+       sodipodi:cx="11.803776"
+       sodipodi:cy="12.342119"
+       sodipodi:r1="12.34395"
+       sodipodi:r2="6.1719751"
+       sodipodi:arg1="0.92524709"
+       sodipodi:arg2="1.5535656"
+       inkscape:rounded="0.25"
+       inkscape:randomized="0"
+       d="m 19.230356,22.20209 c -1.636917,1.232934 -5.271244,-3.724221 -7.320238,-3.688912 -2.0489936,0.03531 -5.5103668,5.11474 -7.1887917,3.938937 C 3.0429014,21.276313 6.6343664,16.288017 5.9676116,14.350219 5.3008567,12.412421 -0.59959185,10.69009 1.0469873e-6,8.73047 0.59959392,6.7708501 6.453569,8.6450681 8.0904856,7.4121341 9.7274022,6.1792002 9.5420976,0.03531049 11.591091,1.3423089e-6 13.640085,-0.0353078 13.666576,6.1113186 15.345,7.2871212 c 1.678425,1.1758026 7.464349,-0.8989988 8.131104,1.0387989 0.666755,1.9377979 -5.170848,3.8624039 -5.770441,5.8220239 -0.599593,1.95962 3.16161,6.821212 1.524693,8.054146 z"
+       inkscape:transform-center-x="1.784462"
+       inkscape:transform-center-y="-31.564964"
+       transform="matrix(27.151111,0,0,28.282469,1.1596513,0.00426144)"
+       inkscape:export-filename="D:\Programming\Unity3D_Projects\Color Switch\Assets\Artworks\png\Star.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+  </g>
+</svg>
