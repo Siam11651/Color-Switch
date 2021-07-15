@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public static float WORLD_SCREEN_WIDTH, WORLD_SCREEN_HEIGHT;
+    public static bool paused;
+
+    public static void GameOver(SceneManager sceneManager)
     {
-        
+        paused = true;
+        Time.timeScale = 0;
+
+        sceneManager.GetInGamePanel().SetActive(false);
+        sceneManager.GetGameOverPanel().SetActive(true);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void StartLevel()
     {
-        
+        UnityEngine.SceneManagement.SceneManager.LoadScene("MainGame");
+    }
+
+    public void Exit()
+    {
+        Application.Quit();
     }
 }

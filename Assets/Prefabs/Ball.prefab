@@ -121,7 +121,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.33333334
+  m_Radius: 0.25
 --- !u!114 &3570244778656908482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,6 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc906ebf9d9b7bd4392eba69a5a37a6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneManager: {fileID: 0}
   sprites:
   - {fileID: 21300000, guid: 33e3a6fbdd860a44489ff2287529ac31, type: 3}
   - {fileID: 21300000, guid: 1f87a1a11bf1a9e45acf6466e30b8a78, type: 3}
@@ -141,3 +142,4 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 916b921ecbaee3a4ba7dd9fe23a2a4df, type: 3}
   upVelocity: 12
   targetGravityScale: 5
+  scoreText: {fileID: 0}

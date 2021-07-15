@@ -31,8 +31,11 @@ public class BallBehaviour : MonoBehaviour
 
     public void BallJump()
     {
-        rb2D.gravityScale = targetGravityScale;
-        rb2D.velocity = new Vector2(0, upVelocity);
+        if(!GameManager.paused)
+        {
+            rb2D.gravityScale = targetGravityScale;
+            rb2D.velocity = new Vector2(0, upVelocity);
+        }
     }
 
     // Start is called before the first frame update
@@ -47,17 +50,46 @@ public class BallBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        float cameraPositionY = Camera.main.transform.position.y;
+        float deepestDepth = Camera.main.ScreenToWorldPoint(new Vector2(0, 
+            Camera.main.pixelHeight)).y + gameObject.GetComponent<CircleCollider2D>().
+            radius * 2;
+
+        if(transform.position.y < cameraPositionY - deepestDepth)
+        {
+            GameManager.GameOver(sceneManager);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag.Equals("Star"))
+        string otherTag = other.gameObject.tag;
+
+        if (otherTag.Equals("Star"))
         {
             scoreText.text = (++sceneManager.score).ToString();
 
             ChangeColor();
             Destroy(other.gameObject);
+        }
+        else if(otherTag.Equals("Obstacle"))
+        {
+            if(other.name.Equals("Red") && colorCode != 0)
+            {
+                GameManager.GameOver(sceneManager);
+            }
+            else if(other.name.Equals("Green") && colorCode != 1)
+            {
+                GameManager.GameOver(sceneManager);
+            }
+            else if(other.name.Equals("Blue") && colorCode != 2)
+            {
+                GameManager.GameOver(sceneManager);
+            }
+            else if(colorCode != 3)
+            {
+                GameManager.GameOver(sceneManager);
+            }
         }
     }
 }

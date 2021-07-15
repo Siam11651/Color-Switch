@@ -7,6 +7,8 @@ TagManager:
   - Ring
   - Ball
   - Star
+  - RibbonSystem
+  - Obstacle
   layers:
   - Default
   - TransparentFX
