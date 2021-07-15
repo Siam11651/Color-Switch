@@ -1,2 +1,4 @@
 # Color Switch
-Color Switch clone
+### Color Switch clone
+
+Open this folder using Unity
