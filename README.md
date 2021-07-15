@@ -1,2 +1,2 @@
-# Color-Switch
+# Color Switch
 Color Switch clone
