@@ -86,7 +86,7 @@ public class BallBehaviour : MonoBehaviour
             {
                 GameManager.GameOver(sceneManager);
             }
-            else if(colorCode != 3)
+            else if(other.name.Equals("Yellow") && colorCode != 3)
             {
                 GameManager.GameOver(sceneManager);
             }

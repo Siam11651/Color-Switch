@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RibbonBehavior : MonoBehaviour
 {
-    public static float RIBBON_LEGNTH = 6;
+    public static float RIBBON_LEGNTH = 6 * 1.5f;
     [SerializeField] GameObject thisPrefab;
     [SerializeField] Transform endTransform;
     [SerializeField] float speed;
