@@ -143,3 +143,4 @@ MonoBehaviour:
   upVelocity: 12
   targetGravityScale: 5
   scoreText: {fileID: 0}
+  deathEffectPrefab: {fileID: 331898064286738108, guid: 2dfc5ac464776034e818061bb2a5bbcb, type: 3}

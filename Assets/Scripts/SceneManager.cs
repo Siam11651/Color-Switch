@@ -14,6 +14,7 @@ public class SceneManager : MonoBehaviour
     void Start()
     {
         GameManager.paused = false;
+        GameManager.ballAlive = true;
         Time.timeScale = 1;
         score = 0;
         GameManager.WORLD_SCREEN_WIDTH = Camera.main.ScreenToWorldPoint(new Vector2(

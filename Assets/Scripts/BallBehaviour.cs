@@ -9,6 +9,7 @@ public class BallBehaviour : MonoBehaviour
     [SerializeField] private Sprite[] sprites;
     [SerializeField] private float upVelocity, targetGravityScale;
     [SerializeField] private Text scoreText;
+    [SerializeField] private GameObject deathEffectPrefab;
     private int colorCode;
     private SpriteRenderer spriteRenderer;
     private Rigidbody2D rb2D;
@@ -31,7 +32,7 @@ public class BallBehaviour : MonoBehaviour
 
     public void BallJump()
     {
-        if(!GameManager.paused)
+        if(!GameManager.paused && GameManager.ballAlive)
         {
             rb2D.gravityScale = targetGravityScale;
             rb2D.velocity = new Vector2(0, upVelocity);
@@ -55,9 +56,9 @@ public class BallBehaviour : MonoBehaviour
             Camera.main.pixelHeight)).y + gameObject.GetComponent<CircleCollider2D>().
             radius * 2;
 
-        if(transform.position.y < cameraPositionY - deepestDepth)
+        if(GameManager.ballAlive && transform.position.y < cameraPositionY - deepestDepth)
         {
-            GameManager.GameOver(sceneManager);
+            PlayDeathEffect();
         }
     }
 
@@ -65,31 +66,47 @@ public class BallBehaviour : MonoBehaviour
     {
         string otherTag = other.gameObject.tag;
 
-        if (otherTag.Equals("Star"))
+        if(GameManager.ballAlive)
         {
-            scoreText.text = (++sceneManager.score).ToString();
+            if (otherTag.Equals("Star"))
+            {
+                scoreText.text = (++sceneManager.score).ToString();
 
-            ChangeColor();
-            Destroy(other.gameObject);
+                ChangeColor();
+                other.GetComponent<StarHitEffect>().PlayEffect();
+                Destroy(other.gameObject);
+            }
+            else if (otherTag.Equals("Obstacle"))
+            {
+                if (other.name.Equals("Red") && colorCode != 0)
+                {
+                    PlayDeathEffect();
+                }
+                else if (other.name.Equals("Green") && colorCode != 1)
+                {
+                    PlayDeathEffect();
+                }
+                else if (other.name.Equals("Blue") && colorCode != 2)
+                {
+                    PlayDeathEffect();
+                }
+                else if (other.name.Equals("Yellow") && colorCode != 3)
+                {
+                    PlayDeathEffect();
+                }
+            }
         }
-        else if(otherTag.Equals("Obstacle"))
-        {
-            if(other.name.Equals("Red") && colorCode != 0)
-            {
-                GameManager.GameOver(sceneManager);
-            }
-            else if(other.name.Equals("Green") && colorCode != 1)
-            {
-                GameManager.GameOver(sceneManager);
-            }
-            else if(other.name.Equals("Blue") && colorCode != 2)
-            {
-                GameManager.GameOver(sceneManager);
-            }
-            else if(other.name.Equals("Yellow") && colorCode != 3)
-            {
-                GameManager.GameOver(sceneManager);
-            }
-        }
+    }
+
+    private void PlayDeathEffect()
+    {
+        gameObject.SetActive(false);
+
+        GameManager.ballAlive = false;
+        rb2D.velocity = Vector2.zero;
+        rb2D.gravityScale = 0;
+        GameObject effect = Instantiate(deathEffectPrefab);
+
+        effect.transform.position = transform.position;
     }
 }

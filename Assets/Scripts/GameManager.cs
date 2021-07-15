@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static float WORLD_SCREEN_WIDTH, WORLD_SCREEN_HEIGHT;
-    public static bool paused;
+    public static bool paused, ballAlive;
 
     public static void GameOver(SceneManager sceneManager)
     {
