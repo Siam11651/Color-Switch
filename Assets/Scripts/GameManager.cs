@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -19,6 +17,11 @@ public class GameManager : MonoBehaviour
     public void StartLevel()
     {
         UnityEngine.SceneManagement.SceneManager.LoadScene("MainGame");
+    }
+
+    public void MainMenu()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
     }
 
     public void Exit()
