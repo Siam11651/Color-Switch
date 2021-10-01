@@ -10,6 +10,7 @@ public class BallBehaviour : MonoBehaviour
     [SerializeField] private float upVelocity, targetGravityScale;
     [SerializeField] private Text scoreText;
     [SerializeField] private GameObject deathEffectPrefab;
+    [SerializeField] private AudioSource jump, die, score;
     private int colorCode;
     private SpriteRenderer spriteRenderer;
     private Rigidbody2D rb2D;
@@ -36,6 +37,8 @@ public class BallBehaviour : MonoBehaviour
         {
             rb2D.gravityScale = targetGravityScale;
             rb2D.velocity = new Vector2(0, upVelocity);
+
+            jump.Play();
         }
     }
 
@@ -70,6 +73,8 @@ public class BallBehaviour : MonoBehaviour
         {
             if (otherTag.Equals("Star"))
             {
+                score.Play();
+
                 scoreText.text = (++sceneManager.score).ToString();
 
                 ChangeColor();
@@ -100,6 +105,8 @@ public class BallBehaviour : MonoBehaviour
 
     private void PlayDeathEffect()
     {
+        die.Play();
+
         gameObject.SetActive(false);
 
         GameManager.ballAlive = false;

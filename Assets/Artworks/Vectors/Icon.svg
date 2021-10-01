@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 640 640" style="enable-background:new 0 0 640 640;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FF0000;}
+	.st1{fill:#0000FF;}
+	.st2{fill:#00FF00;}
+	.st3{fill:#FFFF00;}
+	.st4{fill:#FFFFFF;}
+</style>
+<path id="XMLID_1_" d="M540,640H100C44.8,640,0,595.2,0,540V100C0,44.8,44.8,0,100,0h440c55.2,0,100,44.8,100,100v440
+	C640,595.2,595.2,640,540,640z"/>
+<g id="layer1" inkscape:label="Layer 1" inkscape:groupmode="layer">
+	<path id="path3337" class="st0" d="M529.8,320h-30.2l-0.4-6.6c-1.9-33.9-11.7-64.1-29.8-91.5c-24.9-37.7-62.5-64.5-106.3-75.7
+		c-12-3.1-22.2-4.6-37.8-5.6l-5.3-0.3v-30.1V80l9.1,0.4c82.3,3.2,157.6,48.9,198.9,120.8c18.5,32.2,30.2,72.2,31.4,106.9
+		c0.2,4.6,0.4,9.2,0.5,10.2l0.2,1.8H529.8z"/>
+</g>
+<g id="layer1_1_" inkscape:label="Layer 1" inkscape:groupmode="layer">
+	
+		<path id="path3337_1_" inkscape:export-ydpi="96" inkscape:export-filename="C:\Users\Siam11651\Desktop\Blue Block.png" inkscape:export-xdpi="96" class="st1" d="
+		M320,110.2v30.2l-6.6,0.4c-33.9,1.9-64.1,11.7-91.5,29.8c-37.7,24.9-64.5,62.5-75.7,106.3c-3.1,12-4.6,22.2-5.6,37.8l-0.3,5.3
+		h-30.1H80l0.4-9.1c3.2-82.3,48.9-157.6,120.8-198.9c32.2-18.5,72.2-30.2,106.9-31.4c4.6-0.2,9.2-0.4,10.2-0.5L320,80V110.2z"/>
+</g>
+<g id="layer1_2_" inkscape:label="Layer 1" inkscape:groupmode="layer">
+	<path id="path3337_2_" class="st2" d="M110.2,320h30.2l0.4,6.6c1.9,33.9,11.7,64.1,29.8,91.5c24.9,37.7,62.5,64.5,106.3,75.7
+		c12,3.1,22.2,4.6,37.8,5.6l5.3,0.3v30.1V560l-9.1-0.4c-82.3-3.2-157.6-48.9-198.9-120.8c-18.5-32.2-30.2-72.2-31.4-106.9
+		c-0.2-4.6-0.4-9.2-0.5-10.2L80,320H110.2z"/>
+</g>
+<g id="layer1_3_" inkscape:label="Layer 1" inkscape:groupmode="layer">
+	
+		<path id="path3337_3_" inkscape:export-ydpi="96" inkscape:export-filename="C:\Users\Siam11651\Desktop\Yellow Block.png" inkscape:export-xdpi="96" class="st3" d="
+		M320,529.8v-30.2l6.6-0.4c33.9-1.9,64.1-11.7,91.5-29.8c37.7-24.9,64.5-62.5,75.7-106.3c3.1-12,4.6-22.2,5.6-37.8l0.3-5.3h30.1H560
+		l-0.4,9.1c-3.2,82.3-48.9,157.6-120.8,198.9c-32.2,18.5-72.2,30.2-106.9,31.4c-4.6,0.2-9.2,0.4-10.2,0.5L320,560V529.8z"/>
+</g>
+<g id="layer1_4_" inkscape:label="Layer 1" inkscape:groupmode="layer">
+	
+		<path id="path37" sodipodi:sides="5" sodipodi:r2="6.1719751" sodipodi:r1="12.34395" sodipodi:arg1="0.92524709" sodipodi:arg2="1.5535656" sodipodi:cx="11.803776" sodipodi:cy="12.342119" sodipodi:type="star" inkscape:flatsided="false" inkscape:rounded="0.25" inkscape:randomized="0" inkscape:transform-center-x="1.784462" inkscape:transform-center-y="-31.564964" inkscape:export-ydpi="96" inkscape:export-filename="D:\Programming\Unity3D_Projects\Color Switch\Assets\Artworks\png\Star.png" inkscape:export-xdpi="96" class="st4" d="
+		M365.7,389.3c-10,7.8-32.2-23.7-44.7-23.5s-33.7,32.5-43.9,25.1c-10.3-7.5,11.7-39.2,7.6-51.6c-4.1-12.3-40.1-23.3-36.5-35.8
+		s39.4-0.5,49.4-8.4c10-7.8,8.9-46.9,21.4-47.2c12.5-0.2,12.7,38.9,22.9,46.4c10.3,7.5,45.6-5.7,49.7,6.6
+		c4.1,12.3-31.6,24.6-35.3,37C352.8,350.5,375.7,381.4,365.7,389.3z"/>
+</g>
+</svg>
