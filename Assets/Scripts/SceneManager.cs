@@ -22,6 +22,11 @@ public class SceneManager : MonoBehaviour
         GameManager.WORLD_SCREEN_HEIGHT = Camera.main.ScreenToWorldPoint(new Vector2(
             0, Camera.main.pixelHeight)).y;
 
+        if(!PlayerPrefs.HasKey(GameManager.NORMAL_MODE_SAVE_KEY))
+        {
+            PlayerPrefs.SetInt(GameManager.NORMAL_MODE_SAVE_KEY, 0);
+        }
+
         GameObject firstObstacle = SpawnObstacle(obstaclePrefabs[0], new Vector2(0, -4),
             obstaclePrefabs[0].name);
         lastObstacleTransform = firstObstacle.transform;
