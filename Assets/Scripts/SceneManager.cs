@@ -6,6 +6,7 @@ public class SceneManager : MonoBehaviour
     public static float OBSTACLE_DISCTANCE = 7;
     [SerializeField] GameObject[] obstaclePrefabs;
     [SerializeField] GameObject inGamePanel, gameOverPanel, pausedPanel;
+    [SerializeField] ButtonAudioSourceBehaviour buttonSoundSourceBehaviour;
     public int score;
     Transform lastObstacleTransform;
     int selector;
@@ -111,5 +112,12 @@ public class SceneManager : MonoBehaviour
 
         inGamePanel.SetActive(true);
         pausedPanel.SetActive(false);
+    }
+
+    public void Retry()
+    {
+        buttonSoundSourceBehaviour.isDead = true;
+
+        UnityEngine.SceneManagement.SceneManager.LoadScene(1);
     }
 }

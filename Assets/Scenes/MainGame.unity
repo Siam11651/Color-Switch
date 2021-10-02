@@ -376,9 +376,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 473780243}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: StartLevel
+      - m_Target: {fileID: 473780242}
+        m_TargetAssemblyTypeName: SceneManager, Assembly-CSharp
+        m_MethodName: Retry
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -670,6 +670,7 @@ MonoBehaviour:
   inGamePanel: {fileID: 1421681717}
   gameOverPanel: {fileID: 1984122691}
   pausedPanel: {fileID: 878033798}
+  buttonSoundSourceBehaviour: {fileID: 911989514}
   score: 0
 --- !u!114 &473780243
 MonoBehaviour:
@@ -2957,6 +2958,10 @@ PrefabInstance:
     - target: {fileID: 3570244778656908482, guid: f9f64482cfea88a41bfa2a7625a5fe99, type: 3}
       propertyPath: targetGravityScale
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3570244778656908483, guid: f9f64482cfea88a41bfa2a7625a5fe99, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3570244778656908487, guid: f9f64482cfea88a41bfa2a7625a5fe99, type: 3}
       propertyPath: m_Name

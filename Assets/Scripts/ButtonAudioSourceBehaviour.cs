@@ -6,10 +6,12 @@ public class ButtonAudioSourceBehaviour : MonoBehaviour
 {
     private int initialScene;
     private AudioSource audioSource;
+    private bool dead;
 
     // Start is called before the first frame update
     void Start()
     {
+        dead = false;
         initialScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex;
         audioSource = GetComponent<AudioSource>();
 
@@ -21,9 +23,25 @@ public class ButtonAudioSourceBehaviour : MonoBehaviour
     {
         int nowScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex;
 
-        if(nowScene != initialScene && !audioSource.isPlaying)
+        if(!audioSource.isPlaying)
         {
-            Destroy(gameObject);
+            if(nowScene != initialScene || dead)
+            {
+                Destroy(gameObject);
+            }
+        }
+    }
+
+    public bool isDead
+    {
+        get
+        {
+            return dead;
+        }
+
+        set
+        {
+            dead = value;
         }
     }
 }
